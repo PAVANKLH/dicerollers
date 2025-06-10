@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f59595;
+    border: 3px dotted green;
+    overflow: auto;
+    padding: 20px;
+}
+
+.dice-roll-simulator {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dice-heading {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-styling {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-styling:hover {
+    background-color: darkorange;
+}
+
+.append-icons {
+    font-size: 30px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.onemaincontainer {
+    height: 50vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.onemaincontainer-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+/* Dice roll animation */
+.animate-roll {
+    animation: roll 0.4s ease-in-out;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.3);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
